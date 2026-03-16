@@ -4,12 +4,10 @@ import { ChevronDown } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/hotel-1.png')" }}
       />
-      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
@@ -30,7 +28,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-6"
         >
-          Hotel <span className="text-gold-gradient">Shchara</span>
+          Гостиница <span className="text-gold-gradient">Щара</span>
           <br />
           <span className="text-2xl md:text-3xl lg:text-4xl font-normal text-foreground/80">
             комфорт в сердце Слонима
@@ -68,7 +66,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
