@@ -5,16 +5,14 @@ const Footer = () => {
     <footer id="contacts" className="py-20 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-16">
-          {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl text-primary mb-4">SHCHARA</h3>
+            <h3 className="font-display text-2xl text-primary mb-4">ЩАРА</h3>
             <p className="text-muted-foreground text-sm font-body leading-relaxed">
               Гостиница «Щара» — уютное место для отдыха и деловых поездок в самом
               центре города Слоним.
             </p>
           </div>
 
-          {/* Contacts */}
           <div>
             <h4 className="font-display text-lg mb-4">Контакты</h4>
             <div className="space-y-3">
@@ -31,7 +29,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Actions */}
           <div>
             <h4 className="font-display text-lg mb-4">Быстрые действия</h4>
             <div className="flex flex-col gap-3">

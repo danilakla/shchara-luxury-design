@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navLinks = [
-  { href: "#about", label: "О нас" },
-  { href: "#rooms", label: "Номера" },
-  { href: "#gallery", label: "Галерея" },
-  { href: "#amenities", label: "Удобства" },
-  { href: "#reviews", label: "Отзывы" },
-  { href: "#contacts", label: "Контакты" },
+  { href: "/#about", label: "О нас" },
+  { href: "/#rooms", label: "Номера" },
+  { href: "/#gallery", label: "Галерея" },
+  { href: "/#amenities", label: "Удобства" },
+  { href: "/#reviews", label: "Отзывы" },
+  { href: "/#contacts", label: "Контакты" },
 ];
 
 const Navbar = () => {
@@ -28,11 +29,10 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-display text-2xl tracking-wider text-primary">
-          SHCHARA
-        </a>
+        <Link to="/" className="font-display text-2xl tracking-wider text-primary">
+          ЩАРА
+        </Link>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -52,7 +52,6 @@ const Navbar = () => {
           Позвонить
         </a>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -61,7 +60,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
