@@ -3,9 +3,12 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import RoomsSection from "@/components/RoomsSection";
 import GallerySection from "@/components/GallerySection";
+import BookingSection from "@/components/BookingSection";
+import PaymentSection from "@/components/PaymentSection";
+import CafeSection from "@/components/CafeSection";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import ReviewsSection from "@/components/ReviewsSection";
-import MapSection from "@/components/MapSection";
+import ContactsSection from "@/components/ContactsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,9 +19,12 @@ const Index = () => {
       <AboutSection />
       <RoomsSection />
       <GallerySection />
+      <BookingSection />
+      <PaymentSection />
+      <CafeSection />
       <AmenitiesSection />
       <ReviewsSection />
-      <MapSection />
+      <ContactsSection />
       <Footer />
     </div>
   );
