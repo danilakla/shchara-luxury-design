@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { MapPin, Bed, Wifi, Coffee, Clock } from "lucide-react";
 
@@ -30,10 +29,22 @@ const AboutSection = () => {
           <h2 className="font-display text-3xl md:text-5xl mt-4 mb-6">
             Ваш <span className="text-gold-gradient">идеальный</span> отдых
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-base md:text-lg font-body leading-relaxed">
-            Гостиница «Щара» — это уютное место для отдыха и деловых поездок.
-            Она расположена в центре города Слоним рядом с историческими
-            достопримечательностями, театром и музеем.
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-3xl mx-auto mb-16 space-y-5"
+        >
+          <p className="text-muted-foreground text-base md:text-lg font-body leading-relaxed">
+            Гостиница «Щара» начала своё существование в 1963 году, расположена в центре города Слонима рядом со сквером, Спасо-Преображенским Собором, костёлом Святого Андрея. Рядом находится краеведческий музей им. Стабровского, драматический театр. Последняя реконструкция гостиницы состоялась в 2019 году.
+          </p>
+          <p className="text-muted-foreground text-base md:text-lg font-body leading-relaxed">
+            Рады вам представить одноместные и двухместные номера, различные по уровню комфорта и цене. В номерах имеется всё необходимое для спокойного отдыха и полноценной работы. В гостинице имеется бесплатный Wi-Fi.
+          </p>
+          <p className="text-muted-foreground text-base md:text-lg font-body leading-relaxed">
+            Наш доброжелательный и вежливый персонал создаст для вас атмосферу уюта и комфорта. Мы сделаем все возможное, чтобы пребывание в нашей гостинице стало для Вас приятным.
           </p>
         </motion.div>
 

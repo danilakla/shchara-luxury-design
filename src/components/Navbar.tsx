@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const navLinks = [
   { href: "/#about", label: "О нас" },
   { href: "/#rooms", label: "Номера" },
-  { href: "/#gallery", label: "Галерея" },
-  { href: "/#amenities", label: "Удобства" },
-  { href: "/#reviews", label: "Отзывы" },
+  { href: "/#booking", label: "Бронирование" },
+  { href: "/#cafe", label: "Кафе" },
+  { href: "/#payment", label: "Оплата" },
   { href: "/#contacts", label: "Контакты" },
 ];
 
